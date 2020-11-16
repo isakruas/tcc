@@ -1,0 +1,255 @@
+% ====================================================================================
+% Classe IFNMG para formatação no Padrão do Instituto Federal do Norte de Minas Gerais
+%
+\documentclass{IFNMG}
+
+
+% ===============================================
+% Adicione aqui os pacotes extras, caso necessário
+%
+\usepackage{tasks}
+\usepackage{multirow}
+\begin{document}
+% =========================================================
+% INFORMAÇÕES SOBRE O TCC
+%
+\author{Isak Paulo de Andrade}{Ruas}
+\title{Desenvolvimento e validação de um sistema hipermídia para elaboração de avaliações de matemática}{} %TODO: inserir dois pontos na classe IFNMG
+\numerodepagina{87f}
+\orientador{Dr. Josué Antunes de Macêdo}
+\graduacao{Licenciatura}{Matemática}
+\campus{Januária}{MG}
+\date{Junho}{2019}
+
+% =========================================================
+% ELEMENTOS PRÉ-TEXTUAIS
+%
+\maketitle			% Cria a Capa e Folha de Rosto
+
+
+%%%%% RESUMO DO TCC
+\begin{Resumo}
+A \textit{internet} revolucionou a maneira como se transmite informações e comunicações, possibilita uma maior interatividade entre as pessoas e este aspecto pode ser explorado em processos educacionais. Umas das possíveis maneiras de se utilizar a \textit{internet} como ferramenta facilitadora em processos educacionais é através da elaboração de \textit{sites} especializados. Existe uma variedade de \textit{sites} destinados a facilitarem a aprendizagem do aluno, seja com conteúdos em vídeo, texto ou animações. Nota-se porém, que é pouco explorado a existência de \textit{sites} especializados com o objetivo de auxiliar  professores(as) de matemática a elaborarem seus conteúdos didáticos. Não se percebe na rede mundial de computadores uma ferramenta gratuita com esta finalidade. Neste sentido, torna-se necessário desenvolver um sistema gratuito, com critérios ergonômicos, através da metodologia da pesquisa designer educacional, que possibilite ao(a) professor(a) de matemática dos anos finais do ensino fundamental e ensino médio a elaborar atividades avaliativas, que seja acessível \textit{on-line} pela \textit{internet}, assim como analisar a viabilidade de utilização deste sistema na prática de educadores(as) de matemática da rede pública. Espera-se assim fornecer aos professores e professoras de matemática dos anos finais do ensino fundamental e ensino médio um sistema gratuito e acessível pela \textit{internet}, que facilite a elaboração de atividades avaliativas de matemática.
+	
+\textbf{Palavras-chave: }{ Elaboração de \textit{software}. Teoria ergonômica. Tecnologias digitais. Criação de atividades avaliativas.}
+\end{Resumo}
+
+%%%%% SUMÁRIO
+\sumario
+
+% =========================================================
+% ELEMENTOS TEXTUAIS
+% 
+\section{INTRODUÇÃO}
+A \textit{internet} revolucionou a maneira como se transmite informações e comunicações entre as pessoas, “Basta ligar o computador para que estejamos conectados, literalmente, ao mundo [...]. Mais do que isso, essa ferramenta permite o acesso imediato às últimas tendências e descobertas nos mais variados locais.” (KALINKE, 2009, p. 20), a \textit{internet} possibilita uma maior interatividade entre as pessoas e este aspecto pode ser explorado em processos educacionais (KALINKE, 2009).
+	% Exemplo de uma citação direta longa
+	\begin{CitacaoLonga} 
+A incorporação da \textit{Internet} em processos pedagógicos ocorre em virtude de suas características próprias, que podem auxiliar as atividades escolares. A relação de benefícios que ela pode trazer aos processos pedagógicos contempla uma gama extensa de tópicos, que vai dar facilidade para a pesquisa, passando pela participação em cursos virtuais, visita a \textit{sites} interativos, comunicação dinâmica, publicação de materiais e a prática da leitura em línguas estrangeiras. (KALINKE; ALMOULOUD, 2005, p. 2).
+	\end{CitacaoLonga} 
+Entre os inúmeros exemplos de utilização da \textit{internet}, pode-se citar sua utilização no ensino à distância. Diversas universidades ofertam cursos a distância que são realizados por intermédio desta ferramenta (GARCIA, 1997), como aponta Veiga \textit{et al}. (1998, p.1) “O desenvolvimento da \textit{Internet} oferece novas oportunidades de prestação de serviços, como o comércio eletrônico e o ensino à distância”.
+
+Umas das possíveis maneiras de utilizar a \textit{internet} como ferramenta facilitadora em processos educacionais é através de elaboração de \textit{sites} educacionais especializados (KALINKE; ALMOULOUD, 2005, 2013; KALINKE, 2009). A presente pesquisa procura desenvolver e analisar se a utilização de um sistema disponível de forma gratuita na \textit{internet} para elaboração de atividades avaliativas de matemática, possibilita aos (às) professores (as) de matemática dos anos finais do ensino fundamental e ensino médio uma maior praticidade na elaboração destas atividades.
+
+\newpage
+\section{OBJETIVOS}
+\subsection{Objetivo Geral}
+Desenvolver e validar um sistema que seja disponibilizado \textit{on-line} na \textit{internet} de forma gratuita, destinado a auxiliar professores e professoras de matemática dos anos finais do ensino fundamental e ensino médio a elaborarem suas atividades avaliativas, com um banco de dados de questões de matemática com suas respectivas resoluções, separadas por eixos temáticos e nível de dificuldade.  
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+	\item Desenvolver um sistema gratuito que possibilite ao  professor de matemática  dos anos finais do ensino fundamental e ensino médio a elaborar atividades avaliativas.
+	\item Disponibilizar o sistema para acesso \textit{on-line} pela \textit{internet}.
+	\item Adicionar ao sistema desenvolvido questões de matemática diferenciadas com suas respectivas soluções, separadas por eixos temáticos e nível de dificuldade.
+	\item Analisar a viabilidade de utilização do sistema desenvolvido.
+\end{enumerate}
+\newpage
+\section{JUSTIFICATIVA}
+É notório que a \textit{internet} cumpre um papel importante na sociedade (KALINKE, 2009; PINTO, 2009). Esta ferramenta é utilizada por diferentes setores, seja para divulgação de conteúdos ou prestação de serviços (GUIMARÃES, 2005). No ambiente educacional, nota-se a utilização da \textit{internet} como ferramenta mediadora no processo de ensino e aprendizagem, no qual os alunos podem interagir entre si e assim construírem o conhecimento de forma colaborativa (GUIMARÃES, 2005; HEIDE, STILBORNE, 2000; KALINKE, 2009; KALINKE, ALMOULOUD, 2013; PINTO, 2009).
+
+Existem variedades de \textit{sites} especializados voltados ao campo educacional, destinados a facilitarem a aprendizagem do aluno, seja com conteúdos em vídeo, texto ou animações. Facilmente pode-se identificar a diversidade de conteúdos fornecidos na \textit{internet}. Autores como Costa \textit{et al}. (2003),   Kalinke e Almouloud (2005; 2013), Kalinke (2009) e Luvizotto, Fusco e Scanavacca (2010), apresentaram a necessidade de organizar corretamente os conteúdos didáticos nos sites destinados ao ensino.
+
+Nota-se porém, que é pouco explorado a existência de \textit{sites} especializados em conteúdos destinados aos professores e professoras com o objetivo de auxiliar estes profissionais a elaborarem seus conteúdos didáticos. O Comitê Gestor da \textit{Internet} no Brasil (CGI.BR, 2014) aponta que uma parte dos educadores entrevistados na pesquisa sobre o uso das tecnologias de informação e comunicação nas escolas brasileiras de 2013, elaboram seus conteúdos didáticos através de pesquisas na \textit{internet}, entretanto não se percebe na rede mundial de computadores uma ferramenta especializada e gratuita com esta finalidade.
+
+Existe pois, a necessidade de elaboração de uma ferramenta gratuita, que venha a ser disponibilizada na \textit{internet}, possibilitando ao professor e professora de matemática a criarem suas avaliações de matemática de maneira dinâmica, fácil e prática, que possa ser atualizada constantemente por profissionais que atuam no ensino de matemática, trazendo a rigorosidade adequada nos enunciados de matemática e que apresente as referências bibliográficas, quando citadas.
+
+A presente pesquisa procura desenvolver e analisar a viabilidade de utilização de um sistema para a elaboração de atividades avaliativas no ensino de matemática, destinado aos professores de matemática dos anos finais do ensino fundamental e ensino médio. Espera-se assim, oferecer a estes profissionais uma ferramenta gratuita que possa ser utilizada como mecanismo de auxílio no desenvolvimento das atividades avaliativas de matemática destinadas a estes níveis de ensino.
+
+\newpage
+\section{REVISÃO DE LITERATURA}
+\subsection{Utilização da \textit{internet} em processos educacionais}
+
+O sistema de interconexão de rede de comunicação ou \textit{Internetwork system}, popularmente conhecida como \textit{internet}, possibilita a interconexão entre diversos aparelhos. Esta rede permite a comunicação e o compartilhamento de recursos e dados entre pessoas ao redor do mundo, é uma ferramenta “[...] capaz de deixar as aulas de qualquer disciplina mais atrativas e dinâmicas, desde que o professor, [...], saiba conduzir a utilização deste recurso tecnológico” (BATISTELLA; VINÍCIUS, 2019, p. 2)
+
+
+Nas últimas décadas o número de aparelhos que utilizam a \textit{internet} apresentou um crescimento exponencial, estima-se que mais de 50 bilhões de aparelhos estejam conectados transferindo um fluxo de mais de 2 \textit{zettabytes} de informações por ano (BARROS, SOUZA, 2016). Considerando a quantidade de aparelhos conectados à \textit{internet} e as possibilidades de sua utilização e aplicação, pode-se considerar a \textit{internet} como um espaço das coisas. Lemos (2012) considera a \textit{internet}, na perspectiva de esta ser um este espaço de coisas, como sendo uma rede  
+
+parai aqui
+verificar referencia, doi 10.2759/26127
+ 
+\begin{CitacaoLonga} 
+global dinâmica, baseada em protocolos de comunicação em que “coisas” físicas e virtuais têm identidades, atributos físicos e personalidades virtuais, utilizando interfaces inteligentes e integradas às redes telemáticas. [...] capazes de interagir e de comunicar entre si e com o meio ambiente por meio do intercâmbio de dados. (p. xy)
+\end{CitacaoLonga}
+
+Garcia (1997, p. 1) corrobora com Lemos (2012), em seu artigo “A \textit{Internet} como nova mídia na educação [...]” afirmando, em uma óptica educacional, que “a \textit{Internet} pode ser considerada a mais completa, abrangente e complexa ferramenta de aprendizado do mundo”. Garcia (1997, p. 4) ainda afirma que “A \textit{Internet} é um meio que poderá conduzir-nos a uma crescente homogeneização da cultura de forma geral e é, um canal de construção do conhecimento a partir da transformação das informações pelos alunos e professores”.
+
+ 
+A \textit{World Wide Web} (WWW) é o sistema responsável por reunir os recursos da \textit{internet} em formas diversificadas, como documentos, vídeos, músicas, imagens, entre outras. Sua arquitetura segue o princípio de conexão cliente servidor (GARCIA, 1997; PINTO, 2009). Este espaço pode ser descrito como “[...] um repositório de recursos disponíveis para as mais variadas áreas nomeadamente a educativa” (PINTO, 2009, p. 44). Nesse sentido, Garcia (1997) aponta que
+
+\begin{CitacaoLonga} 
+o uso educacional da WWW tem sido maior por parte de alunos e professores. Cada vez mais as escolas estão ingressando neste mundo, possibilitando que alunos e professores, por exemplo, que desejam pesquisar sobre o ônibus espacial da NASA, possam, além de encontrar arquivos de textos sobre o tema, ver a imagem do ônibus decolando, entrar na história do programa do ônibus espacial e, em seguida, saltarem para outros documentos com o mesmo tema. (p.14).
+\end{CitacaoLonga}
+
+Na contemporaneidade, o uso da WWW torna-se mais presente no meio educacional (PINTO, 2009). Para Barros e Souza (2016) este uso deve-se principalmente devido às gerações mais novas já nascerem em um mundo digital “[...] com grande familiaridade na utilização dos recursos computacionais, como notebooks, celulares, videogames, tabblets e diversos outros equipamentos que podem ser conectados em redes”. (BARRO, SOUZA, 2016, p.3). Prenksy (2001), utiliza o termo \textbf{nativos digitais} para referir-se a estes indivíduos.
+
+Para Kalinke e Almouloud (2005, p. 2) “A incorporação da \textit{Internet} em processos pedagógicos ocorre em virtude de suas características próprias, que podem auxiliar as atividades escolares”, pensamento que vai de encontro ao de Heide e Stilborne (2000, p. 23), que salientam que ”Utilizando a \textit{Internet} como uma ferramenta, os alunos podem explorar ambientes, gerar perguntas e questões, colaborar com os outros e produzir conhecimento, em vez de recebê-los passivamente”. A perspectiva de Heide e Stilborne (2000) e Kalinke e Almouloud (2005) assemelha-se a de Pinto (2009), para este autor a \textit{internet} 
+
+\begin{CitacaoLonga} 
+para os professores é uma oportunidade para marcarem a sua presença na Web tirando partido dum serviço profusamente aceite, massificado e que é, de alguma forma, difusor do conhecimento. Para os alunos é uma oportunidade de tirarem partido das vantagens de aprender através da Web, pesquisando, explorando, comparando, reflectindo, recordando, partilhando e cooperando, segundo o ritmo de cada um. (p. 2-3).
+\end{CitacaoLonga}
+
+A \textit{internet} possibilita a professores e professoras, de qualquer área do conhecimento, além de difundirem o conhecimento, como o proposto por Pinto (2009), a elaborem seus materiais didáticos e divulguem na rede WWW. Em contraste com difusão de conteúdos na \textit{internet}, Costa \textit{et al}. (2003, p. 553), destaca que torna-se necessário a “[...] adaptação dos conteúdos didáticos ao meio eletrônico”. Para os autores essa adaptação torna-se necessária para que se tenha  “[...] materiais didáticos de qualidade e inovadores, capazes de auxiliar o processo de ensino e aprendizagem” (p. 533).
+
+Uma forma recorrente de utilização da \textit{internet} em processos educacionais é através do Ensino a Distância, modalidade educacional cada vez mais procurada por estudantes de diversas áreas (BATISTELLA; VINÍCIUS, 2019). Para Lima (2012, p. 24), o Ensino a Distância é
+
+\begin{CitacaoLonga} 
+uma modalidade de ensino que funciona através de um processo educativo sistemático e organizado que tem como característica fundamental a separação físico-espacial entre professores e alunos, que interagem de lugares distintos, através de meios tecnológicos diversos, que possibilitam uma interação bidirecional, ou seja, uma interação de dupla via.
+\end{CitacaoLonga}
+
+Diversas universidades ofertam cursos à distância que são realizados por intermédio da \textit{internet} (GARCIA, 1997), como aponta Veiga \textit{et al}. (1998, p.1) “O desenvolvimento da \textit{Internet} oferece novas oportunidades de prestação de serviços, como o comércio eletrônico e o ensino à distância”.
+
+Nascimento (2007, p. 74) aponta que o educador ao utilizar a \textit{internet} no processo de ensino e aprendizagem deve “estar preparado para ajudar os educandos a localizar conteúdos de qualidade e a transformar os textos pesquisados em conhecimentos úteis, em material de debates e reflexões, em leitura crítica”, não ficando porém, restrito somente a pesquisa na \textit{internet}.
+
+Para Batistella e Vinícius (2019, p.10) existem uma “infinidade de recursos e aplicativos via web que podem ser usados como ferramenta principal e/ou acessório no processo de ensino-aprendizagem”. Para os autores são “infinitas as opções de ensino por meio da \textit{internet} e seus recursos adjacentes, que estão modificando indelevelmente os papéis educacionais, a estrutura escolar tradicional e a forma de acesso ao conhecimento”.
+
+Percebe-se que a \textit{internet} tem um papel importante nos processos educacionais, nota-se que paulatinamente esta ferramenta irá se ramificar no ambiente escolar, criando diversas possibilidades de utilização, tornando-se assim indispensável nos processos de ensino e aprendizagem, também, observa-se a utilização desta ferramenta como mecanismo versátil na criação e divulgação do conhecimento.
+
+
+\subsection{\textit{Sites} destinados ao ensino de matemática}
+
+Um sistema amplamente utilizado por alunos, como ferramenta mediadora no processo de ensino e aprendizagem é o YouTube. Percebe-se uma variedade de vídeos educacionais disponíveis nesta plataforma, existem diversos canais destinados a áreas diversas do conhecimento, como a matemática. Esta plataforma porém, não é a única, como aponta Mattar (2009, p. 8):
+\begin{CitacaoLonga} 
+Há ainda inúmeros serviços para o uso de vídeos no ensino fundamental e médio: AfterEd (blog com vídeos sobre educação); Annenberg Media (alguns recursos e vídeos gratuitos - e outros pagos - para professores); Edutopia (vídeos e artigos para professores do ensino fundamental e médio); eSchool News.tv (site de notícias em vídeo para tecnologia da educação); PBS Teacher Mathline (recursos multimídia e vídeos para professores de matemática); SchoolTube e TeacherTube (sites de compartilhamento de vídeos para educadores); etc. 
+\end{CitacaoLonga} 
+
+\textit{Sites} como Olimpíada Brasileira de Matemática\footnote[1]{Disponível em: \url{http://www.obm.org.br/opencms/}. Acesso em 07 abr. 2019.}, Calcule Mais\footnote[2]{Disponível em: \url{http://www.calculemais.com.br/}. Acesso em 07 abr. 2019.},  Aula Livre\footnote[3]{Disponível em: \url{https://aulalivre.net/}. Acesso em 07 abr. 2019.},  \textit{Site} Mais\footnote[4]{Disponível em: \url{http://www.mais.mat.br/}. Acesso em 07 abr. 2019.}, Só Matemática\footnote[5]{Disponível em: \url{http://www.somatematica.com.br/}. Acesso em 07 abr. 2019.}, Matematiquês\footnote[6]{Disponível em: \url{http://www.matematiques.com.br/}. Acesso em 07 abr. 2019.}, Portal Matemática\footnote[7]{Disponível em: \url{https://portaldosaber.obmep.org.br/}. Acesso em 07 abr. 2019.},  Me Salva\footnote[8]{Disponível em: \url{http://www.mesalva.com/}. Acesso em 07 abr. 2019.} e Kuadro\footnote[9]{Disponível em: \url{https://www.kuadro.com.br/}. Acesso em 07 abr. 2019.} dedicam-se a fornecer conteúdos variados destinados ao ensino de matemática.
+
+\subsection{A teoria ergonômica no desenvolvimento de \textit{sites} educacionais}
+Paralelo à necessidade de criação de \textit{sites} educacionais, nota-se uma preocupação sobre a forma como os conteúdos são organizados nestes ambientes. Muitos \textit{sites} ignoram aspectos ergonômicos na organização dos conteúdos, o que ocasiona um esforço intelectual desnecessário no usuário (KALINKE, 2002).
+Para Kalinke (2002, p. 10) “[...] a ergonomia trata do estudo de interfaces homem computador que permitam ao usuário utilizar o recurso de forma adequada e com menor desgaste possível, tanto físico como intelectual”. Nesse sentido,
+\begin{CitacaoLonga} 
+A utilização adequada da \textit{Internet} em processos educacionais, [...] necessita que os professores utilizem \textit{sites} adequados aos seus alunos, a fim de organizar, direcionar e qualificar os trabalhos e atividades. [...] é necessário que os processos de construção de \textit{sites} desenvolvam, embasados em critérios e teorias consistentes, ambientes que atendam às necessidades e especificidades dos assuntos propostos. (KALINKE;  ALMOULOUD, 2005, p. 2)
+\end{CitacaoLonga} 
+Um \textit{site} educacional ergonomicamente adequado deve apresentar características como “[...] a capacidade de o ambiente transmitir, de forma clara, simples e direta, as informações para o usuário, através de texto, ícones, sons ou imagens [...]” (KALINKE, 2009, p. 69), documentação adequada e “[...] facilidade de movimentar-se entre as opções do menu ou entre diferentes menus em uma mesma estrutura [...]” (KALINKE, 2009, p. 72).
+\begin{CitacaoLonga} 
+Torna-se necessário, portanto, tomar cuidados que, quando observados, permitirão aos profissionais de ensino desenvolver \textit{sites} educacionais que estarão em consonância com algumas características que lhes permitam ser explorados pelos alunos de tal forma a proporcionar avanços nos processos educacionais (KALINKE; ALMOULOUD, 2005, p. 3).
+\end{CitacaoLonga} 
+Desta maneira, as características listadas da teoria ergonômica para o desenvolvimento de sites, sistemas ou softwares destinados aos processos educacionais se mostram adequadas, por possibilitar que o usuário, ao utilizar a ferramenta dedique esforços somente na compreensão das informações que o site, sistema ou \textit{software} objetiva a transmitir.
+
+\subsection{Utilização de \textit{softwares} como ferramentas de apoio na elaboração de atividades didáticas pedagógicas}
+As Tecnologias da Informação e Comunicação são adotadas por inúmeros educadores. Autores como Cunha \textit{et al}. (2015), Clarindo e Mansur (2016), Gomes e Moita (2016), Jacon e Kalhil (2011) destacam os benefícios que estas ferramentas proporcionam aos(às) educadores(as) e aos alunos durante o processo de ensino e aprendizagem, e a importância para que estes profissionais usufruem destas ferramentas em sala de aula.
+
+Como aponta Jacon e Kalhil (2011), estas ferramentas podem ser exploradas pelo professor como ferramentas de apoio durante o processo de ensino e aprendizagem assim como durante a preparação do material didático a ser utilizado. Ferramentas processadores de texto, planilhas eletrônicas, \textit{softwares} de apresentação, páginas \textit{webs}, entre outras auxiliam estes profissionais a elaborarem seus materiais didáticos.
+
+Neste sentido, percebe-se um campo de pesquisa a ser explorado, focado em identificar e criar ferramentas que auxiliem o(a) professor(a) de matemática ou de outras áreas do conhecimento a desenvolverem seus materiais didáticos, ferramentas estas criadas a partir da óptica da teoria ergonômica, disponibilizadas gratuitamente na \textit{internet}.
+\newpage
+\section{METODOLOGIA/MATERIAL E MÉTODOS}
+Esta pesquisa embasa-se na Metodologia de Pesquisa Designer Educacional, que “[...] engloba o estudo sistemático de concepção, desenvolvimento e avaliação de intervenções educacionais - tais como programas, processos de aprendizagem, ambientes de aprendizagem, materiais de ensino e aprendizagem, produtos e sistemas” (PLOMP, 2013, p. 11, tradução nossa). Esta metodologia diferencia-se dos demais métodos de pesquisa conhecidos, e ainda é pouco explorada pela comunidade científica, entretanto mostra-se apropriada ao problema norteador de pesquisa enunciado.
+
+Esta metodologia assemelha-se ao método de pesquisa experimental, que para Gil (2008, p.35) “O método experimental consiste essencialmente em submeter os objetos de estudo à influência de certas variáveis, em condições controladas e conhecidas pelo investigador, para observar os resultados que a variável produz no objeto”, entretanto,  diferencia-se ao enfatizar a necessidade de solucionar problemas relacionados à prática educacional (MEIRELES, 2017).
+
+Para Plomp (2013, p. 11, tradução nossa) o objetivo da pesquisa designer educacional é “[...] desenvolver soluções de problemas difíceis oriundos da prática educacional ou para desenvolver ou validar teorias sobre processos de aprendizagem, de ambientes de aprendizagem e afins”, diferencia-se dos demais métodos em sua abordagem, no qual apresenta característica cíclica e “[...] destaca a possibilidade de resolução de problemas da prática educacional” (MEIRELES, 2017, p. 26).
+
+Para Meireles (2017), a pesquisa designer educacional compõe-se em três etapas, sendo a \textbf{preliminar}: “[...] revisão da literatura, análise do contexto, desenvolvimento de um quadro conceitual ou teórico para o estudo [...]” (MEIRELES, 2017, p. 27), \textbf{prototipagem}: “[...] construção do modelo, que será refinado com as iterações feitas, visando melhorá-lo [...]” (MEIRELES, 2017, p. 27) e \textbf{avaliação}: “[...] avaliação para estabelecer se a intervenção cumpre as especificações pré-determinadas [...]”(MEIRELES, 2017, p. 27).
+
+Neste sentido, a execução do presente projeto se dará em três etapas, na primeira etapa - \textbf{preliminar} - será realizada uma leitura cuidadosa nos artigos científicos, dissertações, teses e nos livros especializados em desenvolvimento de software, a fim de  identificar as linguagens de programação voltadas para \textit{internet}, \textit{frameworks} e técnicas de programação adequadas, que sejam gratuitas e de fácil manutenção, possíveis de serem utilizadas para desenvolvimento do sistema proposto.
+
+Na segunda etapa - \textbf{prototipagem} - será desenvolvido o sistema conforme os critérios ergonômicos utilizando as linguagens de programação que possibilitem construir as ferramentas que garantam a funcionalidade do sistema, assim como, será inserido no banco de dados do sistema construído questões diversificadas de matemática com suas respectivas resoluções, separadas por eixos temáticos e nível de dificuldade. Neste processo, poder-se-á estabelecer parcerias com os programas como Residência Pedagógica (RP) e Programa Institucional de Bolsas de Iniciação à Docência (PIBID), a fim de ampliar a quantidade de questões a serem inseridas no banco de dados do sistema desenvolvido.
+
+Na terceira etapa - \textbf{avaliação} - o sistema desenvolvido será apresentado a um grupo de professores e professoras de matemática das escolas públicas do município de Januária (MG), para que estes avaliem a viabilidade de utilização dele em suas práticas docentes, assim como será realizado eventuais correções e melhorias na interface desenvolvida.
+
+Para coleta de dados para a validação do sistema, será utilizada a técnica de entrevista e aplicação de questionários, sem restrições quanto a quantidade de questões. Estas podem ser abertas (discursivas) ou fechadas (múltipla escolha), ou a combinação das duas, facilitando a tabulação e o tratamento dos dados obtidos.
+
+Para Marconi e Lakatos (2003, p. 195), entrevista é o “[...] encontro entre duas pessoas, a fim de que uma delas obtenha informações a respeito de um determinado assunto [...]”, objetiva-se o levantamento de dados relevantes para serem analisados em relação a um objeto de estudo, esta pesquisa pois tem enfoque qualitativo, “[...] envolve uma abordagem naturalista, interpretativa, [...] tentando entender, ou interpretar, os fenômenos em termos dos significados que as pessoas a eles conferem [...]” (DENZIN, LINCOLN, 2006, p. 17).
+
+Desta maneira, procurar-se-á desenvolver e analisar a viabilidade de utilização do sistema proposto.
+
+\newpage
+\section{CRONOGRAMA}
+\begin{table}[!h]
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{ATIVIDADES / MESES}} & \multicolumn{8}{c|}{2019} \\ \cline{2-9} 
+		\multicolumn{1}{|c|}{} & Mai. & Jul. & Jul. & Ago. & Set. & Out. & Nov. & \multicolumn{1}{r|}{Dez.} \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Identificação das \\ linguagens de \\ programação \\ voltadas para internet \\ e frameworks gratuitos.\end{tabular} & X & X &  &  &  &  &  & \multicolumn{1}{r|}{} \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Identificação das\\  técnicas de programação \\ existentes.\end{tabular} &  & X & X &  &  &  &  &  \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Desenvolvimento da \\ versão preliminar do\\  sistema.\end{tabular} &  & X & X & X & X &  &  &  \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Desenvolvimento da \\ versão final do sistema.\end{tabular} &  &  &  &  &  &  & X & X \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Verificação da viabilidade \\ de utilização do sistema\\  (validação).\end{tabular} &  &  &  &  & X & X & X &  \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Reuniões com \\ membros da equipe.\end{tabular} & X & X & X & X & X & X & X & X \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Elaboração de trabalhos\\  para submissão em \\ eventos científicos.\end{tabular} &  &  &  & X & X & X & X & X \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Elaboração do \\ relatório mensal.\end{tabular} & X & X & X & X & X & X & X & X \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Elaboração do\\  relatório teórico \\ parcial.\end{tabular} &  &  &  & X &  &  &  &  \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Elaboração do \\ relatório teórico final.\end{tabular} &  &  &  &  &  &  & X & X \\ \hline
+	\end{tabular}
+\end{table}
+\newpage
+\section{REFERÊNCIAS}
+	\begin{Referencias}
+	
+	BARROS, Álvaro Gonçalves de; SOUZA, Carlos Henrique Medeiros de. A internet de todas as coisas e a educação: possibilidades e oportunidades para os processos de ensino e aprendizagem. \textbf{Linkscienceplace}, [S.L.], v. 3, n. 3, p. 31-45, 5 abr. 2017. LinkSciencePlace. \url{http://dx.doi.org/10.17115/2358-8411/v3n3a3}.
+		
+	BATISTELLA, Jefferson; VINÍCIUS, Eduardo Pires. Um estudo sobre o uso da internet no contexto educacional brasileiro. \textbf{Revista Científica Multidisciplinar Núcleo do Conhecimento}, [S. L.], v. 6, n. 7, p. 27-36, jul. 2019.
+		
+	
+		
+	CGI.BR - COMITÊ GESTOR DA INTERNET NO BRASIL. \textbf{Pesquisa sobre o uso das tecnologias de informação e comunicação nas escolas brasileiras}. São Paulo: DB Comunicação Ltda, 2014. Disponível em: \url{https://www.cetic.br/media/docs/publicacoes/2/tic-educacao-2013.pdf}. Acesso em: 09 abr. 2019.
+	
+	CLARINDO, Francisco Jorgan Cabral; MANSUR, Paulo Henrique Garcia. Proposta para implantação de recursos tecnológicos digitais \textit{touchscreen} no ambiente educacional. \textit{\textbf{Future Studies Research Journal: Trends and Strategies}}, v. 8, n. 3, p. 31-31, 2016.
+	
+	COSTA, Valéria Machado da \textit{et al}. Avaliação de \textit{sites} educacionais de química e física: um estudo comparativo. \textit{In}: WORKSHOP EM INFORMÁTICA NA ED, 2003, Rio de Janeiro. \textbf{Anais ...}: Universidade Estadual do Norte Fluminense, 2003. Disponível em: \url{http://www.br-ie.org/pub/index.php/wie/article/view/820/806}. Acesso em: 09 abr. 2019.
+	
+	CUNHA, Abadia de Lourdes da. \textit{et al}. O professor de matemática do ensino médio e as tecnologias de informação e comunicação nas escolas públicas estaduais de Goiás. \textbf{RISTI, Revista Ibérica de Sistemas e Tecnologias de Informação}, Porto, n. spe4, p. 1-15, set. 2015.
+	
+	DENZIN, Norman Kent; LINCOLN, Yvonna Sessions. \textbf{O planejamento da pesquisa qualitativa: teorias e abordagens}. 2. ed. Porto Alegre: Artmed, 2006.
+	
+	GARCIA, Paulo Sérgio. A \textit{Internet} como nova mídia na educação. \textbf{Revista Escola do Futuro}, v. 1, 1997.Disponível em: \url{http://www.educadores.diaadia.pr.gov.br/arquivos/File/2010/artigos_teses/EAD/NOVAMIDIA.PDF}. Acesso em: 09 abr. 2019.
+	
+	GIL, Antonio Carlos. \textbf{Métodos e técnicas de pesquisa social}. 6 ed, São Paulo: Atlas, 2008. 
+	
+	GOMES, Luzivone Lopes; MOITA, Filomena Maria Gonçalves da Silva Cordeiro. O uso do laboratório de informática educacional: partilhando vivências do cotidiano escolar. In: SOUSA, Robson Pequeno de., \textit{et al}., orgs. \textbf{Teorias e práticas em tecnologias educacionais}. Campina Grande: EDUEPB, 2016, p. 151-174.
+	
+	GUIMARÃES, Daniela Eduarda da Silva. \textbf{A \textit{webquest} no ensino da matemática: aprendizagem e reacções dos alunos do 8º ano de escolaridade}. 2005. Dissertação (Mestrado em educação) - Universidade do Minho, Gualtar, 2006. Disponível em: \url{http://hdl.handle.net/1822/5715}. Acesso em: 09 abr. 2019.
+	
+	HEIDE, Ann; STILBORNE, Linda. \textbf{Guia do professor para a \textit{internet}}: completo e fácil. 2 ed. Porto Alegre: Artes Médicas Sul, 2000. 
+	
+	JACON, Liliane da Silva Coelho; KALHIL, Josefina Barrera. O professor formador e as competências em tecnologia de informação e comunicação: Um estudo sobre quais recursos computacionais estes profissionais utilizam na elaboração do seu material didático. \textbf{Amazônia: Revista de Educação em Ciências e Matemáticas}, v. 8, n. 15, p. 27-44, dez. 2011. Disponível em: \url{https://periodicos.ufpa.br/index.php/revistaamazonia/article/view/1682}. Acesso em: 09 abr. 2019.
+	
+	KALINKE, Marco Aurélio. \textbf{Uma proposta para análise e seleção de \textit{sites} educacionais de matemática, à luz das teorias construtivista e ergonômica}. 2002. 157p. Dissertação (Mestrado em Educação) - Setor de Educação, UFPR, Curitiba (PR), 2002.
+	
+	KALINKE, Marco Aurélio. \textbf{A mudança da linguagem matemática para a linguagem \textit{web} e as suas implicações na interpretação de problemas matemáticos}. 2009. Tese (Doutorado em Educação Matemática) - Pontifícia Universidade Católica de São Paulo, São Paulo, 2009. Disponível em: \url{https://tede2.pucsp.br/bitstream/handle/11407/1/Marco\%20Aurelio\%20Kalinke.pdf}. Acesso em: 20 mar. 2019.
+	
+	KALINKE, Marco Aurélio; ALMOULOUD, Saddo Ag. A Relação.  A relação entre aspectos ergonômicos de um \textit{site} que trate de provas e demonstrações matemáticas e a aprendizagem dos assuntos nele disponibilizados. \textit{In:} IX ENCONTRO BRASILEIRO DE ESTUDANTES DE PÓS- GRADUAÇÃO EM EDUCAÇÃO MATEMÁTICA, 2005, São Paulo. \textbf{Anais …} Pesquisa em Educação Matemática e transformação social: perspectivas e interfaces. São Paulo: FEUSP, 2005. Disponível em: \url{http://paginapessoal.utfpr.edu.br/kalinke/publicacoes/publicacoes/Ebrapen_2005.pdf}. Acesso em: 09 abr. 2019.
+	
+	KALINKE, Marco Aurélio; ALMOULOUD, Saddo Ag. A mudança da linguagem matemática para a linguagem \textit{Web} e as suas implicações na interpretação de problemas matemáticos. \textbf{ETD - Educação Temática Digital}, Campinas, SP, v. 15, n. 1, p. 201-219, fev. 2013. Disponível em: \url{https://periodicos.sbu.unicamp.br/ojs/index.php/etd/article/view/1302}. Acesso em: 20 mar. 2019.
+	
+	LUVIZOTTO, Caroline Kraus; FUSCO, Elvis; SCANAVACCA, Aline Cristina. \textit{Educational websites: considerations on architecture of information in teaching-learning process}. \textbf{Educação em Revista}, Marília, v. 11, n.2, p. 23-40, Jul.-Dez. 2010. Disponível em: \url{http://revistas.marilia.unesp.br/index.php/educacaoemrevista/article/view/2319}. Acesso em: 09 abr. 2019.
+	
+	MARCONI, Marina de Andrade; LAKATOS, Eva Maria: Fundamentos de metodologia científica, 5 ed. São Paulo: Atlas, 2003.
+	
+	MATTAR, João.  YouTube na educação: o uso de vídeos em EAD. \textit{In:} XV CONGRESSO INTERNACIONAL ASSOCIAÇÃO BRASILEIRA DE ENSINO À DIST NCIA, 2009, Fortaleza. \textbf{Anais …} A procura de inovações no processo de ensino e aprendizagem em EAD. Fortaleza: ABED, 2009. Disponível em: \url{http://www.pucrs.br/ciencias/viali/recursos/online/vlogs/YouTube.pdf}. Acesso em: 09 abr. 2019.
+	
+	MEIRELES, Tatiana Fernandes. \textbf{Desenvolvimento de um objeto de aprendizagem de matemática usando o \textit{Scratch}}: da elaboração à construção. 2017. Dissertação (Mestrado em Educação Matemática) - Universidade Federal do Paraná, Curitiba, 2017.
+	
+	PINTO, Ricardo Manuel Neves. \textbf{Avaliação da usabilidade e da acessibilidade do \textit{site} educativo}: RPEDU, matemática para alunos do 3º ciclo do ensino básico. 2009. Dissertação (Mestrado em educação) - Universidade do Minho, 2009. Disponível em: \url{http://hdl.handle.net/1822/11128}. Acesso em: 09 abr. 2019.
+	
+	PLOMP, Tjeerd. Educational design research: an introduction. \textit{In:} AKKER, Jan Van Den \textit{et al}. \textbf{Educational design research part A:} an introduction. Enschede: Netherlands Institute for Curriculum Development (SLO), 2013. Disponível em: \url{http://downloads.slo.nl/Documenten/educational-design-research-part-a.pdf}. Acesso em: 09 abr. 2019.
+	
+	VEIGA, Ricardo Teixeira \textit{et al}. O ensino a distância pela \textit{internet}: conceito e proposta de avaliação. \textit{In:} XXII ENCONTRO NACIONAL DA ANPAD, 1998, Foz do Iguaçu. \textbf{Anais …}. Foz do Iguaçu: ANPAD, 1998. Disponível em: \url{http://www.anpad.org.br/admin/pdf/enanpad1998-ai-16.pdf}. Acesso em: 09 abr. 2019.	
+	\end{Referencias}
+
+% =========================================================
+% ELEMENTOS PÓS-TEXTUAIS
+%
+% Os Anexos
+
+
+\end{document}
